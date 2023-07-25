@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Exercicio 1 </h1>
+</body>
+
+
+<script>
+    "use strict;"
+
+var nome = "Bianca"
+var idade = "18 anos"
+
+var data = new Date()
+var dia = data.getDate()
+var mes = data.getMonth() + 1 //na proramação começa contando pelo 0, se vc colocar mes 7 vai aparecer mes 6, então adicionar +1//
+var ano = data.getFullYear()
+var dataCompleta = dia + "/" +mes+ "/" +ano
+document.write("Olá, me chamo "<b> +nome+ </b> ", tenho "+idade+" e hoje é "+dataCompleta+" ")
+
+console.log(nome)
+console.log(idade)
+console.log(dataCompleta)
+
+</script>
+</html>
