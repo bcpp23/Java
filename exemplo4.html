@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> variáveis </title>
+</head>
+<body>
+    <h1> Operações </h1>
+    <p> Interações em java Script </p>
+</body>
+
+<script> 
+
+var nome = window.prompt('Qual é o seu nome?')
+var sobrenome = window.prompt('Qual é o seu sobrenome?')
+var idade =  Number.parseInt (window.prompt('Qual sua idade?')) //Number.parseInt quer dizer que o número é inteiro, ou seja não tem quebra , exemplo 9.8 //
+var idade2 = Number.parseInt (window.prompt ('Coloque sua idade: '))
+var resultado = idade + idade2
+
+// Para fazer conta: Exemplo1 3+4*2/5, aqui faria a divisão primeiro depois a multiplicação e depois a adição //
+// Exemplo2 (3+4)*2/5, aqui o parenteses que manda ou seja vamos faze- lo primeiro e depois resolvemos os demais//
+
+
+document.write("O seu nome é:"  +nome+ "  " +sobrenome+ "<br> Sua idade é:" +idade)
+document.write("<br> A soma das idades é: " +resultado)
+
+</script>
+</html>
+

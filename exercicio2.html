@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contas </title>
+</head>
+<body>
+    <h1> Exercicio 2 </h1>
+</body>
+
+<script>
+
+var multiplicacao = 10 * 3
+var adicao = 12 + 5
+document.write("Exercicio letra A: " +multiplicacao)
+document.write("<br> Exercicio letra B: " +adicao)
+
+
+var soma = 5 - 9*2
+document.write( "<br> Resultado da soma: " +soma)
+
+
+var conta = ((3 + 4) /2)
+document.write("<br> Resultado da Conta: " +conta * +soma)
+
+
+
+var peso = Number.parseFloat(window.prompt('Digite seu peso: ')) //O number vai converter em valor, por que nessa linha estava apenas o window.prompt e uma texto, mas não tinha nada para o valor//
+var altura = Number.parseFloat(window.prompt('Digite sua altura: '))
+var result = peso / (altura*altura)
+document.write("<br> Seu IMC é: " +result)
+//document.write("<br> Seu IMC é: " +peso / (altura * altura))
+
+
+
+var mercadoria = window.prompt('Digite o valor da mercadoria: ')
+var lucro = window.prompt('Digital a porcentagem do seu lucro: ')
+document.write( "<br> Valor total do lucro: " +lucro / 100 * mercadoria)
+
+</script>
+</html>
