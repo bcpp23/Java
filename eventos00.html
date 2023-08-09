@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Eventos com funções </title>
+</head>
+
+<style>
+    div#area{
+        font: normal;
+        background-color: blueviolet;
+        color: white;
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        line-height: 200px;
+    }
+</style>
+<body>
+    <div id="area" onclick="clicar()" onmouseout="sair()" onmouseenter="entrar()"> <!--onclick= quando clicar, onmouseout= quando tirar meu mouse, onmouseenter= quando o mouse entra -->
+        interaja...
+    </div>
+
+
+
+<script> 
+
+//Exemplos de variaveis 
+var uma = 1 //por exemplo essa variavel ela vareia, ou seja vc por exemplo no peso pode colocar qualquer valor //
+let dois = 2 //let é um variavel que não se altera, que não vai mudar//
+const tres = 3 //const é uma variavel constante, mas o valor não pode ser alterado//
+//
+
+
+
+//exercicio//
+let a = window.document.getElementById('area')
+a.addEventListener('click', clicar)//addEventListener vai servir para adicionar um evento, e no caso dessa linha de código o evento adicionado foi o 'click'//
+
+function clicar(){
+    a.innerText = 'Clicou!' //innerText, vai substituir o HTML, por que se não vai chamar o HTML todo//
+    a.style.background = 'yellow'
+    a.style.color = 'black'
+}
+
+function entrar(){
+    a.innerText = 'Entrou!'
+    a.style.background = 'pink'
+
+}
+
+function sair(){
+    a.innerText = 'Saiu!'
+    a.style.background = 'green'
+}
+</script>
+</body>
+</html>

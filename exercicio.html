@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exercicio 3 </title>
+</head>
+
+
+
+
+<body>
+    <h1> Acende a lampada </h1>
+    
+    <p><img  src="img/apagada.jpeg" id="area" onclick="clicar()" onmouseout="sair()" onmouseenter="entrar()"> </p><!--onclick= quando clicar, onmouseout= quando tirar meu mouse, onmouseenter= quando o mouse entra -->
+    
+        
+<script> 
+
+let a = window.document.getElementById('area')
+
+    function clicar(){
+     a.src = 'img/quebrada.jpg'
+    }
+
+    function entrar(){
+        a.src = 'img/luz.jpeg'
+    }
+
+    function sair(){
+        a.src = 'img/apagada.jpeg'
+    }
+</script>
+
+ 
+
+
+
+ 
+
+</body>
+
+</html>
