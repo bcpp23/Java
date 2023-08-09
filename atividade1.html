@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+#botao{
+ background: greenyellow;
+ width: 70px;
+ height: 30px;
+}
+
+
+#tudo{
+    background-color: rgb(236, 236, 236);
+    width: 10000px;
+    height: 200px;
+    display: grid;
+    box-shadow: 10px 10px 30px gray;
+}
+
+
+
+
+    
+</style>
+
+
+
+
+
+
+<body>
+<h1> Aula 03 </h1>
+<div id="tudo">
+
+    <div id="cadastro"> 
+        <p><b> Cadastro de notas </b></p>
+        <label for="Nome completo"><b> Nome completo: </b></label>
+        <input type="text" id="nome">
+
+        <label for="Série"><b> Série: </b></label>
+        <input type="text" id="Série">
+
+        <label for="Matéria"><b> Matéria: </b></label>
+        <select name="Matéria" id="materia"> 
+            <option value="" selected disabled hidden> Selecione </option>
+             <option value="Portugues"> Português </option>
+             <option value="Matematica"> Matemática </option>
+             <option value="Historia"> História </option>
+         </select>
+
+         <br>
+         <br>
+         <br>
+         <br>
+        
+
+         <div id="menu-abaixo">
+         <label for="Bimestre 1"><b> Bimestre 1 </b></label>
+         <input type="text" id="Bimestre 1">
+
+         <label for="Bimestre 2"><b> Bimestre 2 </b></label>
+         <input type="text" id="Bimestre2">
+
+         <label for="Bimestre 3"><b> Bimestre 3 </b></label>
+         <input type="text" id="Bimestre3">
+
+         <label for="Bimestre 4"><b> Bimestre 4 </b></label>
+         <input type="text" id="Bimestre4">
+
+         <label for="Bimestre 5"><b> Bimestre 5 </b></label>
+         <input type="text" id="Bimestre5">
+
+         <label for="Media"><b> Média</b></label>
+         <input type="text" id="Media">
+
+
+         <button id="botao"> Calcular </button>
+
+        </div>
+ 
+    </div>
+</div>   
+
+
+<script>
+    var bimestre1 = Number.parseFloat(document.getElementById('bimestre1'))
+    var bismestre2 = Number.parseFloat(document.getElementById('bimestre2'))
+    var bimestre3 = Number.parseFloat(document.getElementById('bimestre3'))
+    var bimestre4 = Number.parseFloat(document.getElementById('bimestre4'))
+
+    var soma = (bimestre1.value + bimestre2.value + bimestre3.value + bimestre4.value)
+    var divisao = (soma.value / 4)
+    window.alert('Funcionou')
+</script>
+
+
+</body>
+</html>
